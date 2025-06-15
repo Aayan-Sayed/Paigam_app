@@ -27,113 +27,121 @@ Backend service for chat, translation, and speech, using **Bun** and **SarvamAI*
 1. Install dependencies:
    ```bash
    bun install
-Set up environment variables:
-Create a .env file with the following:
+   ```
 
-env
-Copy
-Edit
-SARVAM_API_KEY=your_api_key_here
-Run the backend:
+2. Set up environment variables:
+   Create a `.env` file with the following:
+   ```env
+   SUPABASE_URL=your_supabase_url
+   SUPABASE_ANON_KEY=your_supabase_anon_key
+   SARVAM_API_KEY=your_sarvam_api_key
+   AWS_ACCESS_KEY_ID=your_aws_access_key
+   AWS_SECRET_ACCESS_KEY=your_aws_secret_key
+   AWS_REGION=your_aws_region
+   S3_BUCKET_NAME=your_s3_bucket_name
+   ```
 
-bash
-Copy
-Edit
-bun run index.ts
-For development with auto-reload:
+3. Start the development server:
+   ```bash
+   bun dev
+   ```
 
-bash
-Copy
-Edit
-bun run dev
-✨ Features
-🌐 Translation services using SarvamAI
+---
 
-🔊 Text-to-speech conversion
+## 📱 Frontend (`paighaam_hackprix`)
 
-💬 Chat message handling
+### 📄 Description
 
-👥 Group messaging support
+Mobile application built with Expo/React Native for cross-platform chat experience.
 
-📁 S3 file storage integration
+### ⚙️ Setup
 
-📱 Frontend (paighaam_hackprix)
-📄 Description
-Expo/React Native mobile app for the Paigam chat platform.
+1. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-⚙️ Setup
-Install dependencies:
+2. Set up environment variables:
+   Create a `.env` file with the following:
+   ```env
+   EXPO_PUBLIC_SUPABASE_URL=your_supabase_url
+   EXPO_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   EXPO_PUBLIC_API_BASE_URL=your_backend_url
+   ```
 
-bash
-Copy
-Edit
-npm install
-Start the Expo development server:
+3. Start the Expo development server:
+   ```bash
+   npx expo start
+   ```
 
-bash
-Copy
-Edit
-npx expo start
-📱 Running on Devices
-Android:
+### 📱 Running on Devices
 
-bash
-Copy
-Edit
+**Android:**
+```bash
 npx expo run:android
-iOS:
+```
 
-bash
-Copy
-Edit
+**iOS:**
+```bash
 npx expo run:ios
-✨ Features
-⚡ Real-time chat interface
+```
 
-🔐 User authentication via Supabase
+---
 
-🌍 Multi-language support
+## ✨ Features
 
-🎤 Voice messaging
+- ⚡ Real-time chat interface
+- 🔐 User authentication via Supabase
+- 🌍 Multi-language support
+- 🎤 Voice messaging
+- 👥 Group chat functionality
+- 👤 Profile management
 
-👥 Group chat functionality
+---
 
-👤 Profile management
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
-Backend
-Runtime: Bun
+### Backend
+- **Runtime**: Bun
+- **Framework**: Express.js
+- **AI Services**: SarvamAI (Translation & Speech)
+- **Database**: Supabase
+- **Storage**: AWS S3
 
-Framework: Express.js
+### Frontend
+- **Framework**: React Native / Expo
+- **Styling**: NativeWind (TailwindCSS for React Native)
+- **Navigation**: Expo Router
+- **Backend Services**: Supabase (Auth & Database)
 
-AI Services: SarvamAI (Translation & Speech)
+---
 
-Database: Supabase
+## 📂 Project Structure
 
-Storage: AWS S3
-
-Frontend
-Framework: React Native / Expo
-
-Styling: NativeWind (TailwindCSS for React Native)
-
-Navigation: Expo Router
-
-Backend Services: Supabase (Auth & Database)
-
-📂 Project Structure
-bash
-Copy
-Edit
+```
 ├── paigam-backend/       # Backend source code and scripts
 └── paighaam_hackprix/    # Frontend mobile app source code
-📄 License
-This project is for demonstration and hackathon purposes.
+```
 
-Made with ❤️ for HackPrix
+---
 
-vbnet
-Copy
-Edit
+## 🚀 Getting Started
 
-Let me know if you want this in `.md` file format or would like badges, deployment instructions, or API documentation added!
+1. Clone the repository
+2. Set up the backend following the backend setup instructions
+3. Set up the frontend following the frontend setup instructions
+4. Start both services and begin development
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
