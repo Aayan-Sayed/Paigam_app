@@ -136,12 +136,7 @@ npx expo run:ios
 
 ---
 
-## 📝 License
+## 📄 License
+This project is for demonstration and hackathon purposes.
 
-This project is licensed under the MIT License.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+Made with ❤️ for HackPrix
