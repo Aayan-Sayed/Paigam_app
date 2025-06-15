@@ -139,4 +139,4 @@ npx expo run:ios
 ## 📄 License
 This project is for demonstration and hackathon purposes.
 
-Made with ❤️ for HackPrix
+                    Made with ❤️ for HackPrix
