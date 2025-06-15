@@ -1,7 +1,6 @@
 # Paigam App Workspace
 
 <div align="center">
-  <img src="https://via.placeholder.com/150x150.png?text=Paigam" alt="Paigam Logo" />
   <h2>A multilingual chat application with real-time translation and voice messaging</h2>
 </div>
 
